@@ -1,8 +1,0 @@
-git pull
-mkdir src/pbi_cli
-mkdir .github
-foreach ($i in "__init__.py","__main__.py","main.py","main_pbi_cli.py","commands","core","dlls","preview","skills","templates","utils") { git mv $i src/pbi_cli/ }
-git mv workflows .github/workflows
-git rm -r mocks test_commands
-git commit -m "Fix repo structure: move source into src/pbi_cli and workflows into .github"
-git push
